@@ -1,32 +1,18 @@
 
-
-
+// Calling EVENT Listener for Mobile Price Total math 
 document.getElementById('btn-phone-minus').addEventListener('click', function(){
-    const phoneValue = getValue("phone-number-field");
-    const phoneTotal =  phoneValue - 1;
-    document.getElementById('phone-number-field').value = phoneTotal;
-    const phoneValueTwo = getValue("phone-number-field");
-    const phoneTotalText = setInnerText('phone-total');
-    const phoneTotalTwo = 1219 * phoneValueTwo;
-    // const phoneTotal = phoneTotalText * phoneValue;
-    document.getElementById('phone-total').innerText = phoneTotalTwo;
+    updatingDomPricesMinus("phone-number-field", "phone-total", 1219);
 })
-
-
-
 document.getElementById('btn-phone-plus').addEventListener('click', function(){
-    const phoneValue = getValue("phone-number-field");
-    const phoneTotal =  phoneValue +1;
-    document.getElementById('phone-number-field').value = phoneTotal;
-    const phoneValueTwo = getValue("phone-number-field");
-    const phoneTotalText = setInnerText('phone-total');
-    const phoneTotalTwo = 1219 * phoneValueTwo;
-    // const phoneTotal = phoneTotalText * phoneValue;
-    document.getElementById('phone-total').innerText = phoneTotalTwo;
-    subTotalPrice()
-
+    updatingDomPricesPlus("phone-number-field", "phone-total", 1219);
 })
 
+// Calling EVENT Listener for Mobile case Price Total math 
 
 
-
+document.getElementById('btn-case-minus').addEventListener('click', function(){
+    updatingDomPricesMinus("case-number-field", "case-total", 59);
+})
+document.getElementById('btn-case-plus').addEventListener('click', function(){
+    updatingDomPricesPlus("case-number-field", "case-total", 59);
+})

@@ -1,5 +1,29 @@
 
-// FUNCTION FOR SET INNERTEXT FOR GET VALU TO UPDATING ANOTHER TEXT TO NUMBER CONVERT N
+// FUNCTION FOR math product prices for PLUS
+function updatingDomPricesPlus(idVl, idTotal, price){
+    const phoneValue = getValue(idVl);
+    const phoneTotal =  phoneValue +1;
+    document.getElementById(idVl).value = phoneTotal;
+    const phoneValueTwo = getValue(idVl);
+    const phoneTotalText = setInnerText(idTotal);
+    const phoneTotalTwo = price * phoneValueTwo;
+    document.getElementById(idTotal).innerText = phoneTotalTwo;
+    subTotalPrice();
+}
+
+// FUNCTION FOR math product prices for MINUS
+function updatingDomPricesMinus(idVl, idTotal, price){
+    const phoneValue = getValue(idVl);
+    const phoneTotal =  phoneValue -1;
+    document.getElementById(idVl).value = phoneTotal;
+    const phoneValueTwo = getValue(idVl);
+    const phoneTotalText = setInnerText(idTotal);
+    const phoneTotalTwo = price * phoneValueTwo;
+    document.getElementById(idTotal).innerText = phoneTotalTwo;
+    subTotalPrice();
+}
+
+// FUNCTION FOR SET INNERTEXT FOR GET VALU TO UPDATING ANOTHER TEXT TO NUMBER CONVERT NUMBER
 function setInnerText(id){
     const setextInner = document.getElementById(id);
     const textInner= setextInner.innerText;
