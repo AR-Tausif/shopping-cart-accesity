@@ -1,5 +1,5 @@
 
-// FUNCTION FOR math product prices for PLUS
+// FUNCTION FOR doing math product prices for PLUS
 function updatingDomPricesPlus(idVl, idTotal, price){
     const phoneValue = getValue(idVl);
     const phoneTotal =  phoneValue +1;
@@ -11,7 +11,7 @@ function updatingDomPricesPlus(idVl, idTotal, price){
     subTotalPrice();
 }
 
-// FUNCTION FOR math product prices for MINUS
+// FUNCTION FOR doing math product prices for MINUS
 function updatingDomPricesMinus(idVl, idTotal, price){
     const phoneValue = getValue(idVl);
     const phoneTotal =  phoneValue -1;
@@ -23,7 +23,7 @@ function updatingDomPricesMinus(idVl, idTotal, price){
     subTotalPrice();
 }
 
-// FUNCTION FOR SET INNERTEXT FOR GET VALU TO UPDATING ANOTHER TEXT TO NUMBER CONVERT NUMBER
+// FUNCTION FOR SET INNERTEXT FOR GET VALU TO UPDATING ANOTHER TEXT TO NUMBER CONVERT NUMBER WITH PARSEFLOAT
 function setInnerText(id){
     const setextInner = document.getElementById(id);
     const textInner= setextInner.innerText;
